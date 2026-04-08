@@ -3,4 +3,21 @@
   <groupId>com.sample.selenium</groupId>
   <artifactId>SeleniumFramework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+  <dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.41.0</version>
+    <scope>compile</scope>
+</dependency>
+
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.10.2</version>
+    <scope>test</scope>
+</dependency>
+
+  </dependencies>
 </project>
