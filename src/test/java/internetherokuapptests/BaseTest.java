@@ -11,41 +11,24 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 
+import manager.DriverManager;
 import utils.BaseUtils;
+import utils.WaitUtils;
 
 public class BaseTest {
-	WebDriver driver;
 	WebDriverWait wait;
-	
 
 	@BeforeMethod
 	public void preReq() throws IOException {
-		String browser = "Chrome";
-		switch (browser) {
-		case "Chrome":
-			driver = new ChromeDriver();
-			break;
-		case "Safari":
-			driver = new SafariDriver();
-			break;
-		case "Edge":
-			driver = new EdgeDriver();
-			break;
-		case "Explorer":
-			driver = new InternetExplorerDriver();
-			break;
-		}
-		driver.navigate().to(BaseUtils.getConfigValue("url"));	
-		wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.valueOf(BaseUtils.getConfigValue("wait"))));
-	
-		System.out.println("entered in pre condition method");
+		DriverManager.initDriver();
+		DriverManager.getDriver();
+		WaitUtils.initWait();
+		DriverManager.goToUrl(BaseUtils.getConfigValue("url"));
 	}
 
 	public void tearDown() {
-		driver.quit();
+		DriverManager.getDriver();
 		System.out.println("entered in closing browser method");
 	}
-
-
 
 }

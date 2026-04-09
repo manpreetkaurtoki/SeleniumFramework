@@ -5,7 +5,7 @@
     <classes>
       <class name="internetherokuapptests.FormAuthTest">
         <methods>
-          <include name="dropdownfunc"/>
+          <include name="loginSuccesTest"/>
           <include name="preReq"/>
         </methods>
       </class> <!-- internetherokuapptests.FormAuthTest -->

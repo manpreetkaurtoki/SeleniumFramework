@@ -12,30 +12,28 @@ public class FormAuthTest extends BaseTest {
 
 	@Test
 	public void loginSuccesTest() {
-		WelcomeToInternet entryObj = new WelcomeToInternet(driver, wait);
+		WelcomeToInternet entryObj = new WelcomeToInternet();
 		entryObj.clickFormAuth();
 
-		LoginPage loginObj = new LoginPage(driver, wait);
-		loginObj.enterUsername();
-		loginObj.enterPassword();
+		LoginPage loginObj = new LoginPage();
+		loginObj.enterUsername("tomsmith");
+		loginObj.enterPassword("SuperSecretPassword!");
 		loginObj.clickonSubmit();
 
-		SecureAreaPage headObj = new SecureAreaPage(driver, wait);
+		SecureAreaPage headObj = new SecureAreaPage();
 		String compareHeading = headObj.getSuccessMessage();
+		System.out.println(compareHeading);
+		System.out.println("logged in");
 		Assert.assertTrue(compareHeading.contains("Secure Area"));
-		System.out.println("Login successfully");
-
 	}
 
 	@Test
 	public void dropdownfunc() {
-		WelcomeToInternet entryObj = new WelcomeToInternet(driver, wait);
+		WelcomeToInternet entryObj = new WelcomeToInternet();
 		entryObj.clickDropdown();
-		
-		DropDownPage dropdownObj = new DropDownPage(driver, wait);
+
+		DropDownPage dropdownObj = new DropDownPage();
 		dropdownObj.getDropDownItem(2);
-	
-		
 
 	}
 }
