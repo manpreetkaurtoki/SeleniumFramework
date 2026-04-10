@@ -52,4 +52,18 @@ public class JSAlertTest extends BaseTest {
 		System.out.println(alertObj.getAlertText());
 	}
 
+	@Test
+	public void jsPromptAcceptAlert() {
+		WelcomeToInternet entryObj = new WelcomeToInternet();
+		entryObj.clickJSAlert();
+
+		JSAlertPage alertObj = new JSAlertPage();
+		alertObj.clickJsPromptAcceptAlert();
+		String expected = "Hello Manpreet";
+		alertObj.sendData(expected);
+
+		Assert.assertEquals(alertObj.getAlertText(), "You entered: " + expected);
+		System.out.println(alertObj.getAlertText());
+	}
+
 }

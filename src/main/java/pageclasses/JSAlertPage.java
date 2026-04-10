@@ -33,6 +33,12 @@ public class JSAlertPage {
 	
 
 	}
+	public void clickJsPromptAcceptAlert() {
+		UIActionsUtils.click(jsPromptBtn);
+		//UIActionsUtils.alertIsPresent();
+	
+
+	}
 
 	public void sendData(String text) {
 		 UIActionsUtils.enterTexttoAlert(text);

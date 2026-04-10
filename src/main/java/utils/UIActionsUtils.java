@@ -51,8 +51,14 @@ public class UIActionsUtils {
 
 	public static void enterTexttoAlert(String text) {
 
-		 WaitUtils.alertIsPresent();
-		
-		
+		try {
+			Alert alert = WaitUtils.alertIsPresent();
+			alert.sendKeys(text);
+			alert.accept();
+
+		} catch (NoAlertPresentException e) {
+
+		}
+
 	}
 }
