@@ -1,6 +1,8 @@
 package utils;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -19,8 +21,38 @@ public class UIActionsUtils {
 		WaitUtils.elementToBeClickable(locator).click();
 
 	}
+
 	public static void selectByIndex(WebElement element, int index) {
-        Select dropdown = new Select(element);
-        dropdown.selectByIndex(index);
-    }
+		Select dropdown = new Select(element);
+		dropdown.selectByIndex(index);
+	}
+
+	public static boolean alertIsPresent() {
+
+		try {
+			WaitUtils.alertIsPresent().accept();
+			return true;
+		} catch (NoAlertPresentException e) {
+			return false;
+		}
+
+	}
+
+	public static boolean cancelAlert() {
+
+		try {
+			WaitUtils.alertIsPresent().dismiss();
+			return true;
+		} catch (NoAlertPresentException e) {
+			return false;
+		}
+
+	}
+
+	public static void enterTexttoAlert(String text) {
+
+		 WaitUtils.alertIsPresent();
+		
+		
+	}
 }

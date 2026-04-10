@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
+import org.jspecify.annotations.Nullable;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -34,5 +36,9 @@ public class WaitUtils {
 
 	public static List<WebElement> visibilityOfAllElementsLocatedBy(By locator) {
 		return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
+	}
+
+	public static Alert alertIsPresent() {
+		return wait.until(ExpectedConditions.alertIsPresent());
 	}
 }

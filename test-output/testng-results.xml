@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-09T19:40:25 EDT" name="Default suite" finished-at="2026-04-09T19:40:45 EDT" duration-ms="20564">
+  <suite started-at="2026-04-10T15:33:39 EDT" name="Default suite" finished-at="2026-04-10T15:33:55 EDT" duration-ms="15358">
     <groups>
     </groups>
-    <test started-at="2026-04-09T19:40:25 EDT" name="Default test" finished-at="2026-04-09T19:40:45 EDT" duration-ms="20564">
-      <class name="internetherokuapptests.FormAuthTest">
-        <test-method is-config="true" signature="preReq()[pri:0, instance:internetherokuapptests.FormAuthTest@1aa7ecca]" started-at="2026-04-09T19:40:25 EDT" name="preReq" finished-at="2026-04-09T19:40:45 EDT" duration-ms="19966" status="PASS">
+    <test started-at="2026-04-10T15:33:39 EDT" name="Default test" finished-at="2026-04-10T15:33:55 EDT" duration-ms="15358">
+      <class name="internetherokuapptests.JSAlertTest">
+        <test-method is-config="true" signature="preReq()[pri:0, instance:internetherokuapptests.JSAlertTest@5876a9af]" started-at="2026-04-10T15:33:39 EDT" name="preReq" finished-at="2026-04-10T15:33:54 EDT" duration-ms="14613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preReq -->
-        <test-method signature="dropdownfunc()[pri:0, instance:internetherokuapptests.FormAuthTest@1aa7ecca]" started-at="2026-04-09T19:40:45 EDT" name="dropdownfunc" finished-at="2026-04-09T19:40:45 EDT" duration-ms="534" status="PASS">
+        <test-method signature="jsPromptAcceptAlert()[pri:0, instance:internetherokuapptests.JSAlertTest@5876a9af]" started-at="2026-04-10T15:33:54 EDT" name="jsPromptAcceptAlert" finished-at="2026-04-10T15:33:55 EDT" duration-ms="683" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dropdownfunc -->
-      </class> <!-- internetherokuapptests.FormAuthTest -->
+        </test-method> <!-- jsPromptAcceptAlert -->
+      </class> <!-- internetherokuapptests.JSAlertTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
