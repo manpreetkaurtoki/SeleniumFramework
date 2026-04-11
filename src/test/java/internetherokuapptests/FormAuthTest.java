@@ -28,6 +28,7 @@ public class FormAuthTest extends BaseTest {
 		Assert.assertTrue(compareHeading.contains("Secure Area"));
 	}
 
+
 	@Test
 	public void dropdownfunc() {
 		WelcomeToInternet entryObj = new WelcomeToInternet();

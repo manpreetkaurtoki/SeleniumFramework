@@ -11,7 +11,7 @@ public class WelcomeToInternet {
 	By jsAlertLink = By.xpath("//a[text()='JavaScript Alerts']");
 	By dragdropLink = By.xpath("//a[text()='Drag and Drop']");
 
-	
+
 	public void clickFormAuth() {
 		UIActionsUtils.click(formAuthlink);
 	}

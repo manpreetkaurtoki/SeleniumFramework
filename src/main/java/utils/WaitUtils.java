@@ -37,7 +37,6 @@ public class WaitUtils {
 	public static List<WebElement> visibilityOfAllElementsLocatedBy(By locator) {
 		return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
 	}
-
 	public static Alert alertIsPresent() {
 		return wait.until(ExpectedConditions.alertIsPresent());
 	}

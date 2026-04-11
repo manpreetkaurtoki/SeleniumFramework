@@ -16,7 +16,6 @@ public class UIActionsUtils {
 
 		WaitUtils.visibilityOfElementLocated(locator).sendKeys(text);
 	}
-
 	public static void click(By locator) {
 		WaitUtils.elementToBeClickable(locator).click();
 

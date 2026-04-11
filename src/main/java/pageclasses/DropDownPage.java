@@ -16,7 +16,5 @@ public class DropDownPage {
 		;
 		UIActionsUtils.selectByIndex(WaitUtils.visibilityOfElementLocated(dropdown), index);
 	}
-
-	
 	
 }

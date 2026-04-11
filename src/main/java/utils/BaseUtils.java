@@ -14,6 +14,5 @@ public class BaseUtils {
 				System.getProperty("user.dir") + "/src/test/resources/data/config.properties");
 		property.load(file);
 		return property.getProperty(key);
-
 	}
 }
