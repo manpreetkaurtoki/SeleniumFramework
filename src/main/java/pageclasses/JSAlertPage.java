@@ -35,8 +35,7 @@ public class JSAlertPage {
 	}
 	public void clickJsPromptAcceptAlert() {
 		UIActionsUtils.click(jsPromptBtn);
-		//UIActionsUtils.alertIsPresent();
-	
+		
 
 	}
 

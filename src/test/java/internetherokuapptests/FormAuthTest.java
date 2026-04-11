@@ -15,6 +15,7 @@ public class FormAuthTest extends BaseTest {
 		WelcomeToInternet entryObj = new WelcomeToInternet();
 		entryObj.clickFormAuth();
 
+		
 		LoginPage loginObj = new LoginPage();
 		loginObj.enterUsername("tomsmith");
 		loginObj.enterPassword("SuperSecretPassword!");

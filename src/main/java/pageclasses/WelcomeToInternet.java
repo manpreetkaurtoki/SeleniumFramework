@@ -9,7 +9,9 @@ public class WelcomeToInternet {
 	By formAuthlink = By.xpath("//a[text()='Form Authentication']");
 	By dropdownlink = By.xpath("//a[text()='Dropdown']");
 	By jsAlertLink = By.xpath("//a[text()='JavaScript Alerts']");
+	By dragdropLink = By.xpath("//a[text()='Drag and Drop']");
 
+	
 	public void clickFormAuth() {
 		UIActionsUtils.click(formAuthlink);
 	}
@@ -21,4 +23,9 @@ public class WelcomeToInternet {
 	{
 		UIActionsUtils.click(jsAlertLink);
 	}
+	public void clickDragDrop()
+	{
+		UIActionsUtils.click(dragdropLink);
+	}
+
 }

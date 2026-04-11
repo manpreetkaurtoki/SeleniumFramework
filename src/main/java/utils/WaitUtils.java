@@ -4,10 +4,10 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
-import org.jspecify.annotations.Nullable;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -40,5 +40,13 @@ public class WaitUtils {
 
 	public static Alert alertIsPresent() {
 		return wait.until(ExpectedConditions.alertIsPresent());
+	}
+
+	public static Actions actions() {
+		return new Actions(DriverManager.getDriver());
+	}
+
+	public static WebElement find(By locator) {
+		return DriverManager.getDriver().findElement(locator);
 	}
 }

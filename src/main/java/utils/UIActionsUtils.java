@@ -61,4 +61,12 @@ public class UIActionsUtils {
 		}
 
 	}
+
+	public static void dragAndDrop(By source, By target) {
+		WebElement sourceA = WaitUtils.find(source);
+		WebElement sourceB = WaitUtils.find(target);
+		WaitUtils.find(target);
+		WaitUtils.actions().dragAndDrop(sourceA, sourceB).perform();
+		
+	}
 }

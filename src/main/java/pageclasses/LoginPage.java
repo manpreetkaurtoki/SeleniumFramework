@@ -23,4 +23,5 @@ public class LoginPage {
 		UIActionsUtils.click(submitBtn);
 
 	}
+	
 }
