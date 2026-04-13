@@ -6,6 +6,8 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import manager.ExtentTestManager;
+
 public class UIActionsUtils {
 	public static String getText(By locator) {
 		return WaitUtils.visibilityOfElementLocated(locator).getText();
@@ -16,9 +18,9 @@ public class UIActionsUtils {
 
 		WaitUtils.visibilityOfElementLocated(locator).sendKeys(text);
 	}
-
-	public static void click(By locator) {
+	public static void click(By locator,String text) {
 		WaitUtils.elementToBeClickable(locator).click();
+		ExtentTestManager.log.info(text + " has been clicked");
 
 	}
 

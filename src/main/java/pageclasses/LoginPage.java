@@ -20,8 +20,9 @@ public class LoginPage {
 	}
 
 	public void clickonSubmit() {
-		UIActionsUtils.click(submitBtn);
+		UIActionsUtils.click(submitBtn,"Submit button");
 
+		
 	}
 
 }

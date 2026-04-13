@@ -13,19 +13,19 @@ public class WelcomeToInternet {
 
 
 	public void clickFormAuth() {
-		UIActionsUtils.click(formAuthlink);
+		UIActionsUtils.click(formAuthlink, "Form Auth link");
 	}
 
 	public void clickDropdown() {
-		UIActionsUtils.click(dropdownlink);
+		UIActionsUtils.click(dropdownlink, "DropDown link");
 	}
 	public void clickJSAlert()
 	{
-		UIActionsUtils.click(jsAlertLink);
+		UIActionsUtils.click(jsAlertLink, "JSAlert link");
 	}
 	public void clickDragDrop()
 	{
-		UIActionsUtils.click(dragdropLink);
+		UIActionsUtils.click(dragdropLink, "DragDrop link");
 	}
 
 }

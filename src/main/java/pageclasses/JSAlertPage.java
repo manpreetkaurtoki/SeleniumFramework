@@ -11,30 +11,31 @@ public class JSAlertPage {
 	By jsPromptBtn = By.xpath("//button[text()='Click for JS Prompt']");
 	By compareText = By.xpath("//p[@id='result']");
 
+
 	public void clickJsAlertBtn() {
-		UIActionsUtils.click(jsAlertBtn);
+		UIActionsUtils.click(jsAlertBtn,"JSAlert Button");
 		UIActionsUtils.alertIsPresent();
 
 	}
 
 	public void clickJsConfirmAcceptAlertBtn() {
-		UIActionsUtils.click(jsConfirmBtn);
+		UIActionsUtils.click(jsConfirmBtn, "JSConfirm Button Accept alert");
 		UIActionsUtils.alertIsPresent();
 	}
 
 	public void clickJsConfirmDismissAlert() {
-		UIActionsUtils.click(jsConfirmBtn);
+		UIActionsUtils.click(jsConfirmBtn,"JSConfirm Button dismiss alert");
 		UIActionsUtils.cancelAlert();
 	}
 
 	public void clickJsPromptCancelAlert() {
-		UIActionsUtils.click(jsPromptBtn);
+		UIActionsUtils.click(jsPromptBtn, "JSPrompt button cancel alert");
 		UIActionsUtils.cancelAlert();
 	
 
 	}
 	public void clickJsPromptAcceptAlert() {
-		UIActionsUtils.click(jsPromptBtn);
+		UIActionsUtils.click(jsPromptBtn,"JSPrompt button accept alert");
 		
 
 	}
