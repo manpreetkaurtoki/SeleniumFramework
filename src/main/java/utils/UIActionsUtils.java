@@ -16,6 +16,7 @@ public class UIActionsUtils {
 
 		WaitUtils.visibilityOfElementLocated(locator).sendKeys(text);
 	}
+
 	public static void click(By locator) {
 		WaitUtils.elementToBeClickable(locator).click();
 
@@ -29,7 +30,8 @@ public class UIActionsUtils {
 	public static boolean alertIsPresent() {
 
 		try {
-			WaitUtils.alertIsPresent().accept();
+			Alert alert = WaitUtils.alertIsPresent();
+			alert.accept();
 			return true;
 		} catch (NoAlertPresentException e) {
 			return false;
@@ -40,7 +42,8 @@ public class UIActionsUtils {
 	public static boolean cancelAlert() {
 
 		try {
-			WaitUtils.alertIsPresent().dismiss();
+			Alert alert = WaitUtils.alertIsPresent();
+			alert.dismiss();
 			return true;
 		} catch (NoAlertPresentException e) {
 			return false;
@@ -66,6 +69,6 @@ public class UIActionsUtils {
 		WebElement sourceB = WaitUtils.find(target);
 		WaitUtils.find(target);
 		WaitUtils.actions().dragAndDrop(sourceA, sourceB).perform();
-		
+
 	}
 }

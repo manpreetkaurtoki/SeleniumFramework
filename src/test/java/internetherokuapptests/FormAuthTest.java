@@ -3,6 +3,7 @@ package internetherokuapptests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import pageclasses.DragDropPage;
 import pageclasses.DropDownPage;
 import pageclasses.LoginPage;
 import pageclasses.SecureAreaPage;
@@ -15,7 +16,6 @@ public class FormAuthTest extends BaseTest {
 		WelcomeToInternet entryObj = new WelcomeToInternet();
 		entryObj.clickFormAuth();
 
-		
 		LoginPage loginObj = new LoginPage();
 		loginObj.enterUsername("tomsmith");
 		loginObj.enterPassword("SuperSecretPassword!");
@@ -28,7 +28,6 @@ public class FormAuthTest extends BaseTest {
 		Assert.assertTrue(compareHeading.contains("Secure Area"));
 	}
 
-
 	@Test
 	public void dropdownfunc() {
 		WelcomeToInternet entryObj = new WelcomeToInternet();
@@ -39,5 +38,14 @@ public class FormAuthTest extends BaseTest {
 
 	}
 
-	
+	@Test
+	public void dragAndDrop() {
+		WelcomeToInternet entryObj = new WelcomeToInternet();
+		entryObj.clickDragDrop();
+
+		DragDropPage dragDropObj = new DragDropPage();
+		dragDropObj.performDragandDrop();
+		Assert.assertEquals(dragDropObj.getDragDropHeading(), "A");
+	}
+
 }
