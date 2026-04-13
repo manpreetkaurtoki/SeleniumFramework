@@ -56,7 +56,7 @@ public class FormAuthTest extends BaseTest {
 		JSAlertPage alertObj = new JSAlertPage();
 		alertObj.clickJsAlertBtn();
 		Assert.assertEquals(alertObj.getAlertText(), "You successfully clicked an alert");
-		System.out.println(alertObj.getAlertText());
+		
 	}
 
 	@Test
@@ -67,7 +67,7 @@ public class FormAuthTest extends BaseTest {
 		alertObj.clickJsConfirmDismissAlert();
 
 		Assert.assertEquals(alertObj.getAlertText(), "You clicked: Cancel");
-		System.out.println(alertObj.getAlertText());
+		
 	}
 
 	@Test
@@ -78,7 +78,7 @@ public class FormAuthTest extends BaseTest {
 		alertObj.clickJsConfirmAcceptAlertBtn();
 
 		Assert.assertEquals(alertObj.getAlertText(), "You clicked: Ok");
-		System.out.println(alertObj.getAlertText());
+		
 	}
 
 	@Test
@@ -90,7 +90,7 @@ public class FormAuthTest extends BaseTest {
 		alertObj.clickJsPromptCancelAlert();
 
 		Assert.assertEquals(alertObj.getAlertText(), "You entered: null");
-		System.out.println(alertObj.getAlertText());
+		
 	}
 
 	@Test
@@ -104,6 +104,6 @@ public class FormAuthTest extends BaseTest {
 		alertObj.sendData(expected);
 
 		Assert.assertEquals(alertObj.getAlertText(), "You entered: " + expected);
-		System.out.println(alertObj.getAlertText());
+		
 	}
 }

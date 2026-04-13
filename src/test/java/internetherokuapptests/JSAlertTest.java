@@ -7,7 +7,7 @@ import pageclasses.JSAlertPage;
 import pageclasses.WelcomeToInternet;
 
 public class JSAlertTest extends BaseTest {
-	@Test
+	/*@Test
 	public void jsAlerts() {
 		WelcomeToInternet entryObj = new WelcomeToInternet();
 		entryObj.clickJSAlert();
@@ -64,6 +64,6 @@ public class JSAlertTest extends BaseTest {
 
 		Assert.assertEquals(alertObj.getAlertText(), "You entered: " + expected);
 		System.out.println(alertObj.getAlertText());
-	}
+	}*/
 
 }

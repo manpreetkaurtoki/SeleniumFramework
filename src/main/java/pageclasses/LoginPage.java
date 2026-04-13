@@ -15,7 +15,7 @@ public class LoginPage {
 	}
 
 	public void enterPassword(String password) {
-		UIActionsUtils.enterText(passwordInput, password);
+		UIActionsUtils.enterPassword(passwordInput, password);
 
 	}
 

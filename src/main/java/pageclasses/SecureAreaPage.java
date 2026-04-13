@@ -13,7 +13,7 @@ public class SecureAreaPage {
 	{
 		return UIActionsUtils.getText(heading);
 		
-	
+
 	}
 	
 	

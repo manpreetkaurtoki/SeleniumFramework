@@ -28,8 +28,7 @@ public class BaseTest {
 	WebDriverWait wait;
 
 	@BeforeSuite
-	public void initialise() throws IOException
-	{
+	public void initialise() throws IOException {
 		ExtentManager.initReport();
 	}
 
@@ -41,39 +40,29 @@ public class BaseTest {
 		WaitUtils.initWait();
 		DriverManager.goToUrl(BaseUtils.getConfigValue("url"));
 	}
-	
-	/*@AfterMethod
-	public void endTest()
-	{
-		DriverManager.quitDriver();
-		System.out.println("entered in closing browser method");
-	}*/
-	
-	
+
 	@AfterMethod
-	public void tearDown(ITestResult result) throws IOException{
-		if(result.getStatus() == ITestResult.SUCCESS)
-		{
+	public void endTest(ITestResult result) throws IOException {
+		if (result.getStatus() == ITestResult.SUCCESS) {
 			ExtentTestManager.log.pass("Test Passed");
-		}
-		else if(result.getStatus() == ITestResult.FAILURE)
-		{
+		} else if (result.getStatus() == ITestResult.FAILURE) {
 			ExtentTestManager.log.fail(result.getThrowable());
-			//ExtentTestManager.log.fail(result.getThrowable(), MediaEntityBuilder.createScreenCaptureFromPath(BaseUtils.getScreenShotPath))
-		}
-		else if(result.getStatus() == ITestResult.SKIP)
-		{
+			ExtentTestManager.log.fail(result.getThrowable(),
+					MediaEntityBuilder
+							.createScreenCaptureFromPath(BaseUtils.getScreenShotPath(DriverManager.getDriver(),
+									result.getInstance().getClass().getSimpleName() + "." + result.getMethod()))
+							.build());
+		} else if (result.getStatus() == ITestResult.SKIP) {
 			ExtentTestManager.log.skip("Test Skipped");
 		}
 		DriverManager.quitDriver();
 		System.out.println("entered in closing browser method");
-		
+
 	}
-	
+
 	@AfterSuite
-	
-	public void tearDown()
-	{
+
+	public void tearDown() {
 		ExtentManager.flushReport();
 	}
 
