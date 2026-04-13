@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-12T21:00:27 EDT" name="Default suite" finished-at="2026-04-12T21:00:47 EDT" duration-ms="19584">
+  <suite started-at="2026-04-12T21:17:07 EDT" name="Default suite" finished-at="2026-04-12T21:17:58 EDT" duration-ms="51244">
     <groups>
     </groups>
-    <test started-at="2026-04-12T21:00:27 EDT" name="Default test" finished-at="2026-04-12T21:00:47 EDT" duration-ms="19584">
+    <test started-at="2026-04-12T21:17:07 EDT" name="Default test" finished-at="2026-04-12T21:17:58 EDT" duration-ms="51244">
       <class name="internetherokuapptests.FormAuthTest">
-        <test-method is-config="true" signature="initialise()[pri:0, instance:internetherokuapptests.FormAuthTest@2a3b5b47]" started-at="2026-04-12T21:00:26 EDT" name="initialise" finished-at="2026-04-12T21:00:27 EDT" duration-ms="533" status="PASS">
+        <test-method is-config="true" signature="initialise()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:07 EDT" name="initialise" finished-at="2026-04-12T21:17:07 EDT" duration-ms="415" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialise -->
-        <test-method is-config="true" signature="preReq(java.lang.reflect.Method)[pri:0, instance:internetherokuapptests.FormAuthTest@2a3b5b47]" started-at="2026-04-12T21:00:27 EDT" name="preReq" finished-at="2026-04-12T21:00:33 EDT" duration-ms="5659" status="PASS">
+        <test-method is-config="true" signature="preReq(java.lang.reflect.Method)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:07 EDT" name="preReq" finished-at="2026-04-12T21:17:13 EDT" duration-ms="5511" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preReq -->
-        <test-method signature="dragAndDrop()[pri:0, instance:internetherokuapptests.FormAuthTest@2a3b5b47]" started-at="2026-04-12T21:00:33 EDT" name="dragAndDrop" finished-at="2026-04-12T21:00:34 EDT" duration-ms="1325" status="PASS">
+        <test-method signature="dragAndDrop()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:13 EDT" name="dragAndDrop" finished-at="2026-04-12T21:17:13 EDT" duration-ms="876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dragAndDrop -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:internetherokuapptests.FormAuthTest@2a3b5b47]" started-at="2026-04-12T21:00:34 EDT" name="endTest" finished-at="2026-04-12T21:00:34 EDT" duration-ms="333" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:13 EDT" name="tearDown" finished-at="2026-04-12T21:17:14 EDT" duration-ms="212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dragAndDrop status=SUCCESS method=FormAuthTest.dragAndDrop()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="preReq(java.lang.reflect.Method)[pri:0, instance:internetherokuapptests.FormAuthTest@2a3b5b47]" started-at="2026-04-12T21:00:34 EDT" name="preReq" finished-at="2026-04-12T21:00:39 EDT" duration-ms="4664" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="preReq(java.lang.reflect.Method)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:14 EDT" name="preReq" finished-at="2026-04-12T21:17:18 EDT" duration-ms="4856" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +48,152 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preReq -->
-        <test-method signature="dropdownfunc()[pri:0, instance:internetherokuapptests.FormAuthTest@2a3b5b47]" started-at="2026-04-12T21:00:39 EDT" name="dropdownfunc" finished-at="2026-04-12T21:00:40 EDT" duration-ms="670" status="PASS">
+        <test-method signature="dropdownfunc()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:18 EDT" name="dropdownfunc" finished-at="2026-04-12T21:17:19 EDT" duration-ms="642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dropdownfunc -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:internetherokuapptests.FormAuthTest@2a3b5b47]" started-at="2026-04-12T21:00:40 EDT" name="endTest" finished-at="2026-04-12T21:00:40 EDT" duration-ms="268" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:19 EDT" name="tearDown" finished-at="2026-04-12T21:17:19 EDT" duration-ms="250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=dropdownfunc status=SUCCESS method=FormAuthTest.dropdownfunc()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="preReq(java.lang.reflect.Method)[pri:0, instance:internetherokuapptests.FormAuthTest@2a3b5b47]" started-at="2026-04-12T21:00:40 EDT" name="preReq" finished-at="2026-04-12T21:00:44 EDT" duration-ms="4343" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="preReq(java.lang.reflect.Method)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:19 EDT" name="preReq" finished-at="2026-04-12T21:17:24 EDT" duration-ms="4618" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void internetherokuapptests.FormAuthTest.jsAlerts()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preReq -->
+        <test-method signature="jsAlerts()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:24 EDT" name="jsAlerts" finished-at="2026-04-12T21:17:25 EDT" duration-ms="1029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsAlerts -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:25 EDT" name="tearDown" finished-at="2026-04-12T21:17:25 EDT" duration-ms="340" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=jsAlerts status=SUCCESS method=FormAuthTest.jsAlerts()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="preReq(java.lang.reflect.Method)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:25 EDT" name="preReq" finished-at="2026-04-12T21:17:30 EDT" duration-ms="4830" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void internetherokuapptests.FormAuthTest.jsConfirmAcceptAlert()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preReq -->
+        <test-method signature="jsConfirmAcceptAlert()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:30 EDT" name="jsConfirmAcceptAlert" finished-at="2026-04-12T21:17:31 EDT" duration-ms="907" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsConfirmAcceptAlert -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:31 EDT" name="tearDown" finished-at="2026-04-12T21:17:31 EDT" duration-ms="361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=jsConfirmAcceptAlert status=SUCCESS method=FormAuthTest.jsConfirmAcceptAlert()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="preReq(java.lang.reflect.Method)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:31 EDT" name="preReq" finished-at="2026-04-12T21:17:36 EDT" duration-ms="4792" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void internetherokuapptests.FormAuthTest.jsConfirmCancelAlert()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preReq -->
+        <test-method signature="jsConfirmCancelAlert()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:36 EDT" name="jsConfirmCancelAlert" finished-at="2026-04-12T21:17:37 EDT" duration-ms="954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsConfirmCancelAlert -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:37 EDT" name="tearDown" finished-at="2026-04-12T21:17:38 EDT" duration-ms="311" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=jsConfirmCancelAlert status=SUCCESS method=FormAuthTest.jsConfirmCancelAlert()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="preReq(java.lang.reflect.Method)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:38 EDT" name="preReq" finished-at="2026-04-12T21:17:42 EDT" duration-ms="4903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void internetherokuapptests.FormAuthTest.jsPromptAcceptAlert()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preReq -->
+        <test-method signature="jsPromptAcceptAlert()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:42 EDT" name="jsPromptAcceptAlert" finished-at="2026-04-12T21:17:44 EDT" duration-ms="1115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsPromptAcceptAlert -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:44 EDT" name="tearDown" finished-at="2026-04-12T21:17:44 EDT" duration-ms="264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=jsPromptAcceptAlert status=SUCCESS method=FormAuthTest.jsPromptAcceptAlert()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="preReq(java.lang.reflect.Method)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:44 EDT" name="preReq" finished-at="2026-04-12T21:17:49 EDT" duration-ms="5287" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void internetherokuapptests.FormAuthTest.jsPromptCancelAlert()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preReq -->
+        <test-method signature="jsPromptCancelAlert()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:49 EDT" name="jsPromptCancelAlert" finished-at="2026-04-12T21:17:50 EDT" duration-ms="1157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsPromptCancelAlert -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:50 EDT" name="tearDown" finished-at="2026-04-12T21:17:51 EDT" duration-ms="329" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=jsPromptCancelAlert status=SUCCESS method=FormAuthTest.jsPromptCancelAlert()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="preReq(java.lang.reflect.Method)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:51 EDT" name="preReq" finished-at="2026-04-12T21:17:56 EDT" duration-ms="5436" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,15 +204,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preReq -->
-        <test-method signature="loginSuccesTest()[pri:0, instance:internetherokuapptests.FormAuthTest@2a3b5b47]" started-at="2026-04-12T21:00:44 EDT" name="loginSuccesTest" finished-at="2026-04-12T21:00:46 EDT" duration-ms="2016" status="PASS">
+        <test-method signature="loginSuccesTest()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:56 EDT" name="loginSuccesTest" finished-at="2026-04-12T21:17:58 EDT" duration-ms="1841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSuccesTest -->
-        <test-method is-config="true" signature="endTest()[pri:0, instance:internetherokuapptests.FormAuthTest@2a3b5b47]" started-at="2026-04-12T21:00:46 EDT" name="endTest" finished-at="2026-04-12T21:00:47 EDT" duration-ms="209" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:58 EDT" name="tearDown" finished-at="2026-04-12T21:17:58 EDT" duration-ms="340" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSuccesTest status=SUCCESS method=FormAuthTest.loginSuccesTest()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:internetherokuapptests.FormAuthTest@2a3b5b47]" started-at="2026-04-12T21:00:47 EDT" name="tearDown" finished-at="2026-04-12T21:00:48 EDT" duration-ms="1026" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:internetherokuapptests.FormAuthTest@4c371370]" started-at="2026-04-12T21:17:58 EDT" name="tearDown" finished-at="2026-04-12T21:17:59 EDT" duration-ms="1112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
