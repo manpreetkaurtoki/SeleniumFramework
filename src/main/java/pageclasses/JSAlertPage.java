@@ -14,7 +14,6 @@ public class JSAlertPage {
 	public void clickJsAlertBtn() {
 		UIActionsUtils.click(jsAlertBtn, "JSAlert Button");
 		UIActionsUtils.alertIsPresent();
-
 	}
 
 	public void clickJsConfirmAcceptAlertBtn() {

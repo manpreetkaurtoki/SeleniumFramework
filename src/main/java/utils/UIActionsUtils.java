@@ -13,15 +13,12 @@ public class UIActionsUtils {
 		String uitext = WaitUtils.visibilityOfElementLocated(locator).getText();
 
 		return uitext;
-
 	}
-
 	public static void enterText(By locator, String text) {
 
 		WaitUtils.visibilityOfElementLocated(locator).sendKeys(text);
 		ExtentTestManager.log.info("Entered Text : " + text);
 	}
-
 	public static void enterPassword(By locator, String text) {
 
 		WaitUtils.visibilityOfElementLocated(locator).sendKeys(text);
@@ -29,9 +26,9 @@ public class UIActionsUtils {
 	}
 
 	public static void click(By locator, String text) {
-		WaitUtils.elementToBeClickable(locator).click();
+		//WaitUtils.elementToBeClickable(locator).click();
+		JSUtils.jsClick(WaitUtils.elementToBeClickable(locator));
 		ExtentTestManager.log.info(text + " has been clicked");
-
 	}
 
 	public static void selectByIndex(WebElement element, int index) {

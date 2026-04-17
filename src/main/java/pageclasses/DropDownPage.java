@@ -10,11 +10,7 @@ public class DropDownPage {
 
 	public void getDropDownItem(int index) {
 
-		// WebElement dropSelect =
-		// wait.until(ExpectedConditions.visibilityOfElementLocated(dropdown));
-		// new Select(dropSelect).selectByIndex(index);
-		;
 		UIActionsUtils.selectByIndex(WaitUtils.visibilityOfElementLocated(dropdown), index);
 	}
-	
+
 }

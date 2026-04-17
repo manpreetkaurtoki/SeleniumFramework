@@ -2,13 +2,7 @@ package internetherokuapptests;
 
 import java.io.IOException;
 import java.lang.reflect.Method;
-import java.time.Duration;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -26,7 +20,6 @@ import utils.WaitUtils;
 
 public class BaseTest {
 	WebDriverWait wait;
-
 	@BeforeSuite
 	public void initialise() throws IOException {
 		ExtentManager.initReport();
@@ -61,7 +54,6 @@ public class BaseTest {
 	}
 
 	@AfterSuite
-
 	public void tearDown() {
 		ExtentManager.flushReport();
 	}

@@ -19,7 +19,6 @@ public class BaseUtils {
 		property.load(file);
 		return property.getProperty(key);
 	}
-	
 
 	public static String getScreenShotPath(WebDriver driver, String pageName) throws IOException{
 		File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

@@ -8,10 +8,8 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import utils.BaseUtils;
-
 public class DriverManager {
 	private static WebDriver driver;
-
 	public static void initDriver() throws IOException {
 		System.out.println("I am in before method");
 		String browser = BaseUtils.getConfigValue("browser");
@@ -36,9 +34,7 @@ public class DriverManager {
 		}
 		driver.manage().window().maximize();
 		ExtentTestManager.log.info("Browser has been maximized");
-
 	}
-
 	public static WebDriver getDriver() {
 
 		return driver;
@@ -54,5 +50,6 @@ public class DriverManager {
 		driver.get(url);
 		ExtentTestManager.log.info(url+ " has opened");
 	}
+	
 
 }

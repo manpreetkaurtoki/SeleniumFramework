@@ -12,7 +12,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import manager.DriverManager;
-
 public class WaitUtils {
 	private static WebDriverWait wait;
 
@@ -25,7 +24,6 @@ public class WaitUtils {
 		return wait;
 
 	}
-
 	public static WebElement elementToBeClickable(By locator) {
 		return wait.until(ExpectedConditions.elementToBeClickable(locator));
 	}

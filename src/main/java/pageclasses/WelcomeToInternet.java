@@ -28,4 +28,5 @@ public class WelcomeToInternet {
 		UIActionsUtils.click(dragdropLink, "DragDrop link");
 	}
 
+
 }

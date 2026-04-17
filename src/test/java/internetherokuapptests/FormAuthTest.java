@@ -11,12 +11,10 @@ import pageclasses.SecureAreaPage;
 import pageclasses.WelcomeToInternet;
 
 public class FormAuthTest extends BaseTest {
-
 	@Test
 	public void loginSuccesTest() {
 		WelcomeToInternet entryObj = new WelcomeToInternet();
 		entryObj.clickFormAuth();
-
 		LoginPage loginObj = new LoginPage();
 		loginObj.enterUsername("tomsmith");
 		loginObj.enterPassword("SuperSecretPassword!");
@@ -28,7 +26,6 @@ public class FormAuthTest extends BaseTest {
 		System.out.println("logged in");
 		Assert.assertTrue(compareHeading.contains("Secure Area"));
 	}
-
 	@Test
 	public void dropdownfunc() {
 		WelcomeToInternet entryObj = new WelcomeToInternet();
