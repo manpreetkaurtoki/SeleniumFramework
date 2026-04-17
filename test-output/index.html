@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Default_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="internetherokuapptests.FormAuthTest" class="method navigator-link" hash-for-method="dropdownfunc">dropdownfunc</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="internetherokuapptests.FormAuthTest" class="method navigator-link" hash-for-method="dragAndDrop">dragAndDrop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="internetherokuapptests.FormAuthTest" class="method navigator-link" hash-for-method="dropdownfunc">dropdownfunc</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -162,59 +153,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">internetherokuapptests.FormAuthTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="dropdownfunc">
-                  </a> <!-- dropdownfunc -->
-                  <span class="method-name">dropdownfunc</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with index: 5
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;15.7.5&apos;, java.version: &apos;21.0.5&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.setSelectedByIndex(Select.java:321)
-	at org.openqa.selenium.support.ui.Select.selectByIndex(Select.java:176)
-	at utils.UIActionsUtils.selectByIndex(UIActionsUtils.java:39)
-	at pageclasses.DropDownPage.getDropDownItem(DropDownPage.java:17)
-	at internetherokuapptests.FormAuthTest.dropdownfunc(FormAuthTest.java:38)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -226,6 +164,13 @@ Driver info: driver.version: unknown
                   <a name="dragAndDrop">
                   </a> <!-- dragAndDrop -->
                   <span class="method-name">dragAndDrop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dropdownfunc">
+                  </a> <!-- dropdownfunc -->
+                  <span class="method-name">dropdownfunc</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -275,7 +220,7 @@ Driver info: driver.version: unknown
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/hp/xcf3qcdd4dl92yp7db5s93r40000gn/T/testng-eclipse-825304860/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/hp/xcf3qcdd4dl92yp7db5s93r40000gn/T/testng-eclipse-1274487175/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -328,40 +273,40 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginSuccesTest')
 data.setCell(0, 2, 'internetherokuapptests.FormAuthTest')
-data.setCell(0, 3, 1955);
+data.setCell(0, 3, 1070);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'jsAlerts')
+data.setCell(1, 1, 'jsPromptAcceptAlert')
 data.setCell(1, 2, 'internetherokuapptests.FormAuthTest')
-data.setCell(1, 3, 792);
+data.setCell(1, 3, 945);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'jsPromptAcceptAlert')
+data.setCell(2, 1, 'dragAndDrop')
 data.setCell(2, 2, 'internetherokuapptests.FormAuthTest')
-data.setCell(2, 3, 784);
+data.setCell(2, 3, 664);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'dragAndDrop')
+data.setCell(3, 1, 'jsPromptCancelAlert')
 data.setCell(3, 2, 'internetherokuapptests.FormAuthTest')
-data.setCell(3, 3, 770);
+data.setCell(3, 3, 502);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'jsPromptCancelAlert')
+data.setCell(4, 1, 'jsConfirmAcceptAlert')
 data.setCell(4, 2, 'internetherokuapptests.FormAuthTest')
-data.setCell(4, 3, 591);
+data.setCell(4, 3, 470);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'jsConfirmCancelAlert')
+data.setCell(5, 1, 'jsAlerts')
 data.setCell(5, 2, 'internetherokuapptests.FormAuthTest')
-data.setCell(5, 3, 563);
+data.setCell(5, 3, 463);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'jsConfirmAcceptAlert')
+data.setCell(6, 1, 'jsConfirmCancelAlert')
 data.setCell(6, 2, 'internetherokuapptests.FormAuthTest')
-data.setCell(6, 3, 487);
+data.setCell(6, 3, 394);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'dropdownfunc')
 data.setCell(7, 2, 'internetherokuapptests.FormAuthTest')
-data.setCell(7, 3, 425);
+data.setCell(7, 3, 375);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -394,105 +339,103 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">preReq(public void internetherokuapptests.FormAuthTest.dragAndDrop())</span>
-                <span class="method-start">491 ms</span>
+                <span class="method-start">402 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">dragAndDrop</span>
-                <span class="method-start">8603 ms</span>
+                <span class="method-start">4403 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTest([TestResult name=dragAndDrop status=SUCCESS method=FormAuthTest.dragAndDrop()[pri:0, instance:intern...)</span>
-                <span class="method-start">9378 ms</span>
+                <span class="method-start">5071 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">preReq(public void internetherokuapptests.FormAuthTest.dropdownfunc())</span>
-                <span class="method-start">9566 ms</span>
+                <span class="method-start">5242 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">dropdownfunc</span>
-                <span class="method-start">12740 ms</span>
+                <span class="method-start">8794 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">endTest([TestResult name=dropdownfunc status=FAILURE method=FormAuthTest.dropdownfunc()[pri:0, instance:inte...)</span>
-                <span class="method-start">13171 ms</span>
+                <span class="method-name">endTest([TestResult name=dropdownfunc status=SUCCESS method=FormAuthTest.dropdownfunc()[pri:0, instance:inte...)</span>
+                <span class="method-start">9171 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">preReq(public void internetherokuapptests.FormAuthTest.jsAlerts())</span>
-                <span class="method-start">13655 ms</span>
+                <span class="method-start">9336 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">jsAlerts</span>
-                <span class="method-start">16972 ms</span>
+                <span class="method-start">12956 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTest([TestResult name=jsAlerts status=SUCCESS method=FormAuthTest.jsAlerts()[pri:0, instance:internethero...)</span>
-                <span class="method-start">17766 ms</span>
+                <span class="method-start">13422 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">preReq(public void internetherokuapptests.FormAuthTest.jsConfirmAcceptAlert())</span>
-                <span class="method-start">17933 ms</span>
+                <span class="method-start">13656 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">jsConfirmAcceptAlert</span>
-                <span class="method-start">21330 ms</span>
+                <span class="method-start">17510 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTest([TestResult name=jsConfirmAcceptAlert status=SUCCESS method=FormAuthTest.jsConfirmAcceptAlert()[pri:...)</span>
-                <span class="method-start">21819 ms</span>
+                <span class="method-start">17983 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">preReq(public void internetherokuapptests.FormAuthTest.jsConfirmCancelAlert())</span>
-                <span class="method-start">22034 ms</span>
+                <span class="method-start">18141 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">jsConfirmCancelAlert</span>
-                <span class="method-start">25809 ms</span>
+                <span class="method-start">22161 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTest([TestResult name=jsConfirmCancelAlert status=SUCCESS method=FormAuthTest.jsConfirmCancelAlert()[pri:...)</span>
-                <span class="method-start">26376 ms</span>
+                <span class="method-start">22557 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">preReq(public void internetherokuapptests.FormAuthTest.jsPromptAcceptAlert())</span>
-                <span class="method-start">26566 ms</span>
+                <span class="method-start">22740 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">jsPromptAcceptAlert</span>
-                <span class="method-start">30396 ms</span>
+                <span class="method-start">26370 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTest([TestResult name=jsPromptAcceptAlert status=SUCCESS method=FormAuthTest.jsPromptAcceptAlert()[pri:0,...)</span>
-                <span class="method-start">31183 ms</span>
+                <span class="method-start">27317 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">preReq(public void internetherokuapptests.FormAuthTest.jsPromptCancelAlert())</span>
-                <span class="method-start">31420 ms</span>
+                <span class="method-start">27521 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">jsPromptCancelAlert</span>
-                <span class="method-start">36267 ms</span>
+                <span class="method-start">31700 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTest([TestResult name=jsPromptCancelAlert status=SUCCESS method=FormAuthTest.jsPromptCancelAlert()[pri:0,...)</span>
-                <span class="method-start">36860 ms</span>
+                <span class="method-start">32204 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">preReq(public void internetherokuapptests.FormAuthTest.loginSuccesTest())</span>
-                <span class="method-start">37047 ms</span>
+                <span class="method-start">32373 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginSuccesTest</span>
-                <span class="method-start">40381 ms</span>
+                <span class="method-start">36645 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">endTest([TestResult name=loginSuccesTest status=SUCCESS method=FormAuthTest.loginSuccesTest()[pri:0, instanc...)</span>
-                <span class="method-start">42338 ms</span>
+                <span class="method-start">37717 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">42653 ms</span>
+                <span class="method-start">38096 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
