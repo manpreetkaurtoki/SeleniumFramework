@@ -1,5 +1,7 @@
 package internetherokuapptests;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.Assert;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
@@ -33,7 +35,6 @@ public class BaseTest {
 		WaitUtils.initWait();
 		DriverManager.goToUrl(BaseUtils.getConfigValue("url"));
 	}
-
 	@AfterMethod
 	public void endTest(ITestResult result) throws IOException {
 		if (result.getStatus() == ITestResult.SUCCESS) {
@@ -53,6 +54,7 @@ public class BaseTest {
 
 	}
 
+	@AfterMethod
 	@AfterSuite
 	public void tearDown() {
 		ExtentManager.flushReport();

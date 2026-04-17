@@ -1,5 +1,7 @@
 package internetherokuapptests;
 
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -24,7 +26,7 @@ public class FormAuthTest extends BaseTest {
 		String compareHeading = headObj.getSuccessMessage();
 		System.out.println(compareHeading);
 		System.out.println("logged in");
-		Assert.assertTrue(compareHeading.contains("Secure Area"));
+		AssertJUnit.assertTrue(compareHeading.contains("Secure Area"));
 	}
 	@Test
 	public void dropdownfunc() {
@@ -43,7 +45,7 @@ public class FormAuthTest extends BaseTest {
 
 		DragDropPage dragDropObj = new DragDropPage();
 		dragDropObj.performDragandDrop();
-		Assert.assertEquals(dragDropObj.getDragDropHeading(), "A");
+		AssertJUnit.assertEquals(dragDropObj.getDragDropHeading(), "A");
 	}
 	@Test
 	public void jsAlerts() {
@@ -52,7 +54,7 @@ public class FormAuthTest extends BaseTest {
 
 		JSAlertPage alertObj = new JSAlertPage();
 		alertObj.clickJsAlertBtn();
-		Assert.assertEquals(alertObj.getAlertText(), "You successfully clicked an alert");
+		AssertJUnit.assertEquals(alertObj.getAlertText(), "You successfully clicked an alert");
 		
 	}
 
@@ -63,7 +65,7 @@ public class FormAuthTest extends BaseTest {
 		JSAlertPage alertObj = new JSAlertPage();
 		alertObj.clickJsConfirmDismissAlert();
 
-		Assert.assertEquals(alertObj.getAlertText(), "You clicked: Cancel");
+		AssertJUnit.assertEquals(alertObj.getAlertText(), "You clicked: Cancel");
 		
 	}
 
@@ -74,7 +76,7 @@ public class FormAuthTest extends BaseTest {
 		JSAlertPage alertObj = new JSAlertPage();
 		alertObj.clickJsConfirmAcceptAlertBtn();
 
-		Assert.assertEquals(alertObj.getAlertText(), "You clicked: Ok");
+		AssertJUnit.assertEquals(alertObj.getAlertText(), "You clicked: Ok");
 		
 	}
 
@@ -86,7 +88,7 @@ public class FormAuthTest extends BaseTest {
 		JSAlertPage alertObj = new JSAlertPage();
 		alertObj.clickJsPromptCancelAlert();
 
-		Assert.assertEquals(alertObj.getAlertText(), "You entered: null");
+		AssertJUnit.assertEquals(alertObj.getAlertText(), "You entered: null");
 		
 	}
 
@@ -100,7 +102,7 @@ public class FormAuthTest extends BaseTest {
 		String expected = "Hello Manpreet";
 		alertObj.sendData(expected);
 
-		Assert.assertEquals(alertObj.getAlertText(), "You entered: " + expected);
+		AssertJUnit.assertEquals(alertObj.getAlertText(), "You entered: " + expected);
 		
 	}
 }
