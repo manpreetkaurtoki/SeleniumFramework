@@ -38,7 +38,6 @@ public class DriverManager {
 	public static WebDriver getDriver() {
 
 		return driver;
-
 	}
 
 	public static void quitDriver() {

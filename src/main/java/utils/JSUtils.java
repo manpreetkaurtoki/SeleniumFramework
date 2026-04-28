@@ -1,8 +1,5 @@
 package utils;
 
-import java.sql.Driver;
-
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
