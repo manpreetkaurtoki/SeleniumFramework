@@ -8,6 +8,7 @@ public class DragDropPage {
 	By boxA = By.xpath("//div[@id='column-a']");
 	By boxB = By.xpath("//div[@id='column-b']");
 	By header = By.xpath("//div[@id='column-b']/header[text()='A']");
+
 	
 public void performDragandDrop()
 {
