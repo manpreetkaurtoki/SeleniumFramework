@@ -1,8 +1,7 @@
 package internetherokuapptests;
 
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pageclasses.DragDropPage;
@@ -13,21 +12,30 @@ import pageclasses.SecureAreaPage;
 import pageclasses.WelcomeToInternet;
 
 public class FormAuthTest extends BaseTest {
-	@Test
-	public void loginSuccesTest() {
+	@DataProvider(name = "loginData")
+	public Object[][] getData() {
+		return new Object[][] { 
+			{ "user1", "pass1" }, 
+			{ "tomsmith", "SuperSecretPassword!" }, 
+			{ "admin", "admin123" } };
+	}
+
+	@Test(dataProvider = "loginData")
+	public void loginSuccesTest(String username, String password) {
 		WelcomeToInternet entryObj = new WelcomeToInternet();
 		entryObj.clickFormAuth();
 		LoginPage loginObj = new LoginPage();
-		loginObj.enterUsername("tomsmith");
-		loginObj.enterPassword("SuperSecretPassword!");
+		loginObj.enterUsername(username);
+		loginObj.enterPassword(password);
 		loginObj.clickonSubmit();
 
 		SecureAreaPage headObj = new SecureAreaPage();
 		String compareHeading = headObj.getSuccessMessage();
 		System.out.println(compareHeading);
 		System.out.println("logged in");
-		AssertJUnit.assertTrue(compareHeading.contains("Secure Area"));
+		Assert.assertTrue(compareHeading.contains("Secure Area"));
 	}
+
 	@Test
 	public void dropdownfunc() {
 		WelcomeToInternet entryObj = new WelcomeToInternet();
@@ -45,8 +53,9 @@ public class FormAuthTest extends BaseTest {
 
 		DragDropPage dragDropObj = new DragDropPage();
 		dragDropObj.performDragandDrop();
-		AssertJUnit.assertEquals(dragDropObj.getDragDropHeading(), "A");
+		Assert.assertEquals(dragDropObj.getDragDropHeading(), "A");
 	}
+
 	@Test
 	public void jsAlerts() {
 		WelcomeToInternet entryObj = new WelcomeToInternet();
@@ -54,8 +63,8 @@ public class FormAuthTest extends BaseTest {
 
 		JSAlertPage alertObj = new JSAlertPage();
 		alertObj.clickJsAlertBtn();
-		AssertJUnit.assertEquals(alertObj.getAlertText(), "You successfully clicked an alert");
-		
+		Assert.assertEquals(alertObj.getAlertText(), "You successfully clicked an alert");
+
 	}
 
 	@Test
@@ -65,8 +74,8 @@ public class FormAuthTest extends BaseTest {
 		JSAlertPage alertObj = new JSAlertPage();
 		alertObj.clickJsConfirmDismissAlert();
 
-		AssertJUnit.assertEquals(alertObj.getAlertText(), "You clicked: Cancel");
-		
+		Assert.assertEquals(alertObj.getAlertText(), "You clicked: Cancel");
+
 	}
 
 	@Test
@@ -75,9 +84,8 @@ public class FormAuthTest extends BaseTest {
 		entryObj.clickJSAlert();
 		JSAlertPage alertObj = new JSAlertPage();
 		alertObj.clickJsConfirmAcceptAlertBtn();
+		Assert.assertEquals(alertObj.getAlertText(), "You clicked: Ok");
 
-		AssertJUnit.assertEquals(alertObj.getAlertText(), "You clicked: Ok");
-		
 	}
 
 	@Test
@@ -88,8 +96,8 @@ public class FormAuthTest extends BaseTest {
 		JSAlertPage alertObj = new JSAlertPage();
 		alertObj.clickJsPromptCancelAlert();
 
-		AssertJUnit.assertEquals(alertObj.getAlertText(), "You entered: null");
-		
+		Assert.assertEquals(alertObj.getAlertText(), "You entered: null");
+
 	}
 
 	@Test
@@ -102,7 +110,7 @@ public class FormAuthTest extends BaseTest {
 		String expected = "Hello Manpreet";
 		alertObj.sendData(expected);
 
-		AssertJUnit.assertEquals(alertObj.getAlertText(), "You entered: " + expected);
-		
+		Assert.assertEquals(alertObj.getAlertText(), "You entered: " + expected);
+
 	}
 }

@@ -54,7 +54,6 @@ public class BaseTest {
 
 	}
 
-	@AfterMethod
 	@AfterSuite
 	public void tearDown() {
 		ExtentManager.flushReport();
