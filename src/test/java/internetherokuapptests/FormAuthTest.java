@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import dataprovider.ExcelDataProvider;
 import pageclasses.DragDropPage;
 import pageclasses.DropDownPage;
 import pageclasses.JSAlertPage;
@@ -14,13 +15,10 @@ import pageclasses.WelcomeToInternet;
 public class FormAuthTest extends BaseTest {
 	@DataProvider(name = "loginData")
 	public Object[][] getData() {
-		return new Object[][] { 
-			{ "user1", "pass1" }, 
-			{ "tomsmith", "SuperSecretPassword!" }, 
-			{ "admin", "admin123" } };
+		return new Object[][] { { "user1", "pass1" }, { "tomsmith", "SuperSecretPassword!" }, { "admin", "admin123" } };
 	}
 
-	@Test(dataProvider = "loginData")
+	@Test(dataProvider = "ExcelLoginData", dataProviderClass = ExcelDataProvider.class)
 	public void loginSuccesTest(String username, String password) {
 		WelcomeToInternet entryObj = new WelcomeToInternet();
 		entryObj.clickFormAuth();
@@ -36,7 +34,7 @@ public class FormAuthTest extends BaseTest {
 		Assert.assertTrue(compareHeading.contains("Secure Area"));
 	}
 
-	@Test
+	@Test(invocationCount = 2)
 	public void dropdownfunc() {
 		WelcomeToInternet entryObj = new WelcomeToInternet();
 		entryObj.clickDropdown();
