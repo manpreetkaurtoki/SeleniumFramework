@@ -6,7 +6,7 @@
       <class name="internetherokuapptests.FormAuthTest">
         <methods>
           <include name="tearDown"/>
-          <include name="loginSuccesTest" invocation-numbers="0 1 3"/>
+          <include name="excelData"/>
           <include name="preReq"/>
           <include name="endTest"/>
           <include name="initialise"/>

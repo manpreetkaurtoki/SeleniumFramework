@@ -111,4 +111,12 @@ public class FormAuthTest extends BaseTest {
 		Assert.assertEquals(alertObj.getAlertText(), "You entered: " + expected);
 
 	}
+	
+	@Test(dataProvider = "ExcelLoginData", dataProviderClass = ExcelDataProvider.class)
+	public void excelData(String usr, String password)
+	{
+		
+	System.out.println(usr);
+		System.out.println(password);
+	}
 }
