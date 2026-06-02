@@ -62,6 +62,7 @@ public class BaseTest {
 	@AfterSuite
 	public void tearDown() {
 		ExtentManager.flushReport();
+		DBUtils.closeConnection();
 	}
 
 }
