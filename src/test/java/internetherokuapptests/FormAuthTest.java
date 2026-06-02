@@ -52,7 +52,9 @@ public class FormAuthTest extends BaseTest {
 		DragDropPage dragDropObj = new DragDropPage();
 		dragDropObj.performDragandDrop();
 		Assert.assertEquals(dragDropObj.getDragDropHeading(), "A");
+		
 	}
+	
 
 	@Test
 	public void jsAlerts() {

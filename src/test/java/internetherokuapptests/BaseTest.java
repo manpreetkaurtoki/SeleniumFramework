@@ -18,6 +18,7 @@ import manager.DriverManager;
 import manager.ExtentManager;
 import manager.ExtentTestManager;
 import utils.BaseUtils;
+import utils.DBUtils;
 import utils.WaitUtils;
 
 public class BaseTest {
@@ -25,6 +26,8 @@ public class BaseTest {
 	@BeforeSuite
 	public void initialise() throws IOException {
 		ExtentManager.initReport();
+		DBUtils.getConnection();
+		System.out.println("Connection status DD: "+ DBUtils.getConnection());
 	}
 
 	@BeforeMethod
@@ -34,6 +37,8 @@ public class BaseTest {
 		DriverManager.getDriver();
 		WaitUtils.initWait();
 		DriverManager.goToUrl(BaseUtils.getConfigValue("url"));
+		
+		System.out.println(DBUtils.getSingleValue("Select * from Person.Person Where FirstName = 'Terri'", "FirstName"));
 	}
 	@AfterMethod
 	public void endTest(ITestResult result) throws IOException {
